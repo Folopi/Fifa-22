@@ -1,0 +1,125 @@
+$rosa:#c501e2;
+$morado:#9a27f7;
+$azul-morado:#6664ff;
+$azul:#2b97fa;
+$celeste:#01c4e7;
+$rojo:#cf0060;
+$mostaza:#ffa300;
+$negro:#000117;
+$verde:#1cedae;
+$gris:#888;
+
+#body{
+    background-color: $negro;
+}
+.temp22-article__section-h2{
+    color:$verde;
+    // margin: auto;
+}
+.nav{
+    background-color: $azul-morado;
+    position: sticky;
+    top: 0px;
+    // padding: 15px;
+    padding: 15px;
+    h1{
+        color:$mostaza;
+        font-size: 28px;
+        margin: 0px 20px;
+    }
+    ul{
+        display: flex;
+        margin: 0px;
+    }
+    li{
+        list-style: none;
+        margin-right: 20px;
+        
+    }
+    a{
+        // color:$celeste;
+        color: $verde;
+        text-decoration: none;
+        
+    }
+    a:hover{
+        // color:$celeste;
+        color: $mostaza;
+        // border: 1px solid $rojo;
+        
+    }
+}
+
+
+
+.section-ul{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(4,100px);
+    
+
+
+    li{
+        list-style: none;
+        // width: 100%;
+        text-align: center;
+        grid-column: 1 span;
+        background-color: $rosa;
+        border: 1px solid black;
+        
+    }
+    li:nth-child(1){
+        grid-column: 4 span;
+        background-color: $mostaza;
+    }
+    li:nth-child(2){
+        grid-column: 2 span;
+        background-color: $verde;
+        
+    }
+    li:nth-child(3){
+        grid-column: 2 span;
+        background-color: $verde;
+        
+        
+    }
+    li:nth-child(4){
+        grid-column: 1 span;
+        background-color: $rojo;
+        text-align: right;
+    }
+    li:nth-child(5){
+        grid-column: 2 span;
+        background-color: $rojo;
+        
+    }
+    li:nth-child(6){
+        grid-column: 1 span;
+        background-color: $rojo;
+        text-align: left;
+    }
+
+}
+
+
+
+img{
+    // width: 200px;
+    height: 500px;
+border-radius: 5%;
+}
+
+.carousel{
+    width: 700px;
+    margin: auto;
+    // border: 1px solid red;
+    
+}
+.carousel-control-next{
+    color: #2b97fa;
+    background-color: #c501e2;
+}
+$black:#000;
+$carousel-dark-indicator-active-bg:  $black;
+$carousel-dark-caption-color:        $black;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);
